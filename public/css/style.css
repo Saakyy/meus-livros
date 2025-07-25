@@ -1,0 +1,176 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('/img/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 160px;
+}
+
+h1 {
+    color: #333;
+}
+
+a, button {
+    background-color: #e6a441;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:hover, button:hover {
+    background-color: #d28e35;
+}
+
+td {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 10px;
+    color: #333;
+}
+
+/* NOVO: inputs mais bonitos */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #e6a441;
+    box-shadow: 0 0 5px rgba(230, 164, 65, 0.5);
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    max-width: 400px;
+    color: #333;
+}
+
+/* lista de livros estilizada */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container para centralizar formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tabela mais bonita */
+table {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Botões com ícones bonitos */
+.edit-btn::before {
+    content: "✏️ ";
+}
+
+.delete-btn::before {
+    content: "❌ ";
+}
+
+.form-livro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+.form-livro input[type="text"],
+.form-livro input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-criar {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-criar:hover {
+    background-color: #45a049;
+}
